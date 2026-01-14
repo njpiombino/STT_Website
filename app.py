@@ -12,6 +12,14 @@ Scss(app)
 def index():
     return render_template("index.html")
 
+@app.route("/spikeball")
+def spikeball():
+    return render_template('spikeball.html')
+
+@app.route("/tableTennis")
+def tableTennis():
+    return render_template('tableTennis.html')
+
 
 # Runner and Debugger
 if __name__ == "__main__":
